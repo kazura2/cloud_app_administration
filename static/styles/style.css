@@ -1,0 +1,43 @@
+body {
+    background-color: #cccccc;
+}
+
+.work_area{
+    margin: auto;
+    justify-content: center;
+    padding: 50%;
+    width: 50%;
+    background-color: yellow;
+    padding: 1%;
+}
+
+h1{
+    margin: auto;
+    width: 20%;
+    font-size: 200% ;
+    color: crimson;
+}
+
+.title{
+    margin-top: 3%;
+    font-size: 200%;
+    font-weight: bold;
+    color: crimson;
+}
+
+.cyan{
+    background-color: aquamarine;
+}
+
+.button{
+    margin-top: 3%;
+    background-color: aquamarine;
+    font-weight: bold;
+}
+
+.creddits{
+    font-size: x-small;
+    position: absolute;
+    bottom: 1%;
+    width: 50%;
+}

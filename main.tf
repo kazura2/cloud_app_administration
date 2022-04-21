@@ -1,3 +1,4 @@
+
 terraform {
   required_providers {
     azurerm = {
@@ -10,14 +11,13 @@ terraform {
 provider "azurerm" {
   features {}
 }
-
 resource "azurerm_resource_group" "rg" {
-  name     = "myResourceGroup"
+  name     = "CloudAppResourceGroup"
   location = "eastus"
 }
 
 resource "azurerm_app_service_plan" "appserviceplan" {
-  name                = "cloudappadministration"
+  name                = "CloudAppZaliczenie"
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
   sku {
@@ -27,7 +27,7 @@ resource "azurerm_app_service_plan" "appserviceplan" {
 }
 
 resource "azurerm_app_service" "webapp" {
-  name                = "cloudappadministration"
+  name                = "CloudAppZaliczenie"
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
   app_service_plan_id = azurerm_app_service_plan.appserviceplan.id

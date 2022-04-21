@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<link href="{{ url_for('static',filename='styles/style.css') }}" rel="stylesheet" type="text/css">
+
+<head >
+    <meta charset="UTF-8">
+    <title>Pizza calculator</title>
+</head>
+
+<body>
+    <h1>PIZZA CALCULATOR</h1>
+    <div class="work_area">
+
+
+
+        <div class="title">Pizza 1</div>
+
+        <div>
+            Średnica (cm)
+            <input class="cyan" id="rozmiar1" type="number" value="0">
+
+        </div>
+
+        <div>
+            Cena (zł)
+            <input class="cyan" id="cena1" type="number" value="0">
+
+        </div>
+
+        <div class="title">Pizza 2</div>
+
+        <div>
+            Średnica (cm)
+
+            <input class="cyan" id="rozmiar2" type="number" value="0">
+        </div>
+
+        <div>
+            Cena (zł)
+
+            <input class="cyan" id="cena2" type="number" value="0">
+        </div>
+
+        <div class="title" id="result">
+
+            <span id="id1"></span>
+        </div>
+
+        <div class="title" id="result3">
+
+            <span id="id2"></span>
+        </div>
+
+        <div class="title" id="result2">
+
+            <span id="id2"></span>
+        </div>
+
+        <div>
+            <button class="button" id="button" type="button">Przelicz</button>
+        </div>
+    </div>
+
+</body>
+<script src="{{ url_for('static',filename='js/main.js') }}"></script>
+
+</html>

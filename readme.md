@@ -1,0 +1,4 @@
+-Aplikacja webowa w postaci HTML + css + JavaScript
+-Zarządzana za pomocą Flaska
+-Monitorowana za pomocą Prometheusa
+-Wrzucana na Microsoft Azure za pomocą Terraforma  
